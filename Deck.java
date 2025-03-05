@@ -26,3 +26,11 @@ class Deck {
         }
         System.out.println("Deck successfully created!");
     }
+
+    // b) Print all cards in the deck
+    public void displayDeck() {
+        // Loops through the entire deck and prints each card
+        for (Card card : deck) {
+            System.out.println(card);
+        }
+    }
