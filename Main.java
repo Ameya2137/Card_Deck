@@ -4,7 +4,7 @@
 
 // Main.java
 
-import java.util.*; // Importing all java utilities 
+import java.util.*; // Importing necessary Java utilities {Scanner, ArrayList, Collections.shuffle()}
 
 // Defining Main class
 class Main {
