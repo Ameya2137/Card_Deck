@@ -81,3 +81,17 @@ class Deck {
             System.out.println("No cards found with the rank " + rank);
         }
     }
+
+    // f) Find a specific card in the deck
+    public boolean findCard(String rank, String suit) { // Checks if a specific card exists.
+        for (Card card : deck) {
+            // If found, print the card and return true.
+            if (card.rank.equalsIgnoreCase(rank) && card.suit.equalsIgnoreCase(suit)) {
+                System.out.println("Card Found: " + card);
+                return true;
+            }
+        }
+        // If not found, print the card and return false.
+        System.out.println("Card not found.");
+        return false;
+    }
