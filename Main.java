@@ -68,3 +68,9 @@ class Main {
                     String findSuit = scanner.nextLine();
                     deck.findCard(findRank, findSuit); // To display the found card of similar rank & suit
                     break;
+                case 7:
+                    deck.dealCard(); // To display or deal 5 random cards
+                    break;
+                case 8:
+                    deck.shuffleDeck(); // To randomly reorder the printed deck
+                    break;
