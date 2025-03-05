@@ -74,3 +74,14 @@ class Main {
                 case 8:
                     deck.shuffleDeck(); // To randomly reorder the printed deck
                     break;
+                case 9:
+                    System.out.println("Exiting program..."); // Displaying an exit message and terminates loop
+                    break;
+                default:
+                    System.out.println("Invalid choice! Please select a valid option."); // If a number between 1-9 not entered, this error message this displayed
+            }
+        } while (choice != 9); // The program keeps running until user selects 9 (Exit)
+
+        scanner.close(); // Closing the Scanner to prevent resource leaks
+    }
+}
