@@ -59,3 +59,12 @@ class Main {
                     String cardRank = scanner.nextLine();
                     deck.compareCard(cardRank); // To display cards of similar rank
                     break;
+                case 6:
+                    // Prompting the user to enter the rank & suit
+                    System.out.print("Enter rank of the card (e.g., Ace, 2, ..., Jack, Queen, King): ");
+                    scanner.nextLine(); // Consume newline
+                    String findRank = scanner.nextLine();
+                    System.out.print("Enter suit of the card (Clubs, Spades, Diamonds, Hearts): ");
+                    String findSuit = scanner.nextLine();
+                    deck.findCard(findRank, findSuit); // To display the found card of similar rank & suit
+                    break;
