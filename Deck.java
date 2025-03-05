@@ -34,3 +34,16 @@ class Deck {
             System.out.println(card);
         }
     }
+
+    // c) Print a specific card if it exists
+    public void printCard(String rank, String suit) {
+        for (Card card : deck) {
+            if (card.rank.equalsIgnoreCase(rank) && card.suit.equalsIgnoreCase(suit)) { // Case-insensitive for both rank & suit
+                // If a match is found, print it and exit the loop
+                System.out.println("Card Found: " + card);
+                return;
+            }
+        }
+        // If card not found, print error message
+        System.out.println("Card not found.");
+    }
