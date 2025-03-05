@@ -119,3 +119,10 @@ class Deck {
             System.out.println(card);
         }
     }
+
+    // h) Shuffle the deck
+    public void shuffleDeck() {
+        Collections.shuffle(deck); // Uses Collections.shuffle() to randomize the order of cards
+        System.out.println("Deck shuffled!");
+    }
+}
