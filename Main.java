@@ -45,3 +45,10 @@ class Main {
                     String suit = scanner.nextLine();
                     deck.printCard(rank, suit); // To display the requested card
                     break;
+                case 4:
+                    // Prompting the user to enter the suit
+                    System.out.print("Enter a suit (Clubs, Spades, Diamonds, Hearts): ");
+                    scanner.nextLine(); // Consume newline
+                    String cardSuit = scanner.nextLine();
+                    deck.sameCard(cardSuit); // To display cards in the same suit
+                    break;
