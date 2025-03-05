@@ -36,3 +36,12 @@ class Main {
                 case 2:
                     deck.displayDeck(); // To display all the cards
                     break;
+                case 3:
+                    // Prompting the user to enter the rank & suit
+                    System.out.print("Enter rank of the card (e.g., Ace, 2, ..., Jack, Queen, King): ");
+                    scanner.nextLine(); // Consume newline
+                    String rank = scanner.nextLine();
+                    System.out.print("Enter suit of the card (Clubs, Spades, Diamonds, Hearts): ");
+                    String suit = scanner.nextLine();
+                    deck.printCard(rank, suit); // To display the requested card
+                    break;
