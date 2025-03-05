@@ -47,3 +47,20 @@ class Deck {
         // If card not found, print error message
         System.out.println("Card not found.");
     }
+
+    // d) Find all cards with the same suit
+    public void sameCard(String suit) { // Finds and prints all cards of a given suit
+        System.out.println("Cards with the suit " + suit + ":");
+        boolean found = false; // Intializes found to false 
+        for (Card card : deck) {
+            // Checks if each card matches, and if found prints card ans sets to true
+            if (card.suit.equalsIgnoreCase(suit)) {
+                System.out.println(card);
+                found = true;
+            }
+        }
+        // If no cards were found, display an error message
+        if (!found) {
+            System.out.println("No cards found with the suit " + suit);
+        }
+    }
