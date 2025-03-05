@@ -27,3 +27,12 @@ class Main {
             System.out.println("9. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
+
+            // Creating a switch-case statement that executes different methods based on user input
+            switch (choice) {
+                case 1:
+                    deck.createDeck(); // To generate a standard 52-card deck
+                    break;
+                case 2:
+                    deck.displayDeck(); // To display all the cards
+                    break;
