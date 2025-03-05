@@ -95,3 +95,27 @@ class Deck {
         System.out.println("Card not found.");
         return false;
     }
+
+    // g) Deal 5 random cards
+    public void dealCard() {
+        // If the deck has less than 5 cards, print an error
+        if (deck.size() < 5) {
+            System.out.println("Not enough cards in the deck to deal 5 cards.");
+            return;
+        }
+        // Creates a new list dealtCards to store the 5 random cards
+        System.out.println("5 Random Cards from the Deck:");
+        ArrayList<Card> dealtCards = new ArrayList<>();
+        Random rand = new Random();
+
+        // Uses rand.nextInt(deck.size()) to pick random indices
+        for (int i = 0; i < 5; i++) {
+            int randomIndex = rand.nextInt(deck.size());
+            dealtCards.add(deck.get(randomIndex));
+        }
+
+        // Prints the selected cards
+        for (Card card : dealtCards) {
+            System.out.println(card);
+        }
+    }
