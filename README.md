@@ -25,7 +25,7 @@ This Java program simulates a deck of 52 playing cards, allowing users to perfor
 - **Collections.shuffle()** (for deck randomization)
 
 ## How to Run
-**1. Clone the repository**: git clone https://github.com/your-username/CardDeckSimulator.git
+**1. Clone the repository**: git clone https://github.com/Ameya2137/Card_Deck.git
 
 **2. Navigate to the project directory**: cd CardDeckSimulator
 
