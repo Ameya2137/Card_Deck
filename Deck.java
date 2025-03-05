@@ -64,3 +64,20 @@ class Deck {
             System.out.println("No cards found with the suit " + suit);
         }
     }
+
+    // e) Find all cards with the same rank
+    public void compareCard(String rank) { // Finds and prints all cards of a given rank
+        System.out.println("Cards with the same rank (" + rank + "):");
+        boolean found = false; // Intializes found to false 
+        for (Card card : deck) {
+            // Checks if each card matches, and if found prints card ans sets to true
+            if (card.rank.equalsIgnoreCase(rank)) {
+                System.out.println(card);
+                found = true;
+            }
+        }
+        // If no cards were found, display an error message
+        if (!found) {
+            System.out.println("No cards found with the rank " + rank);
+        }
+    }
